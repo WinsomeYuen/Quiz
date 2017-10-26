@@ -91,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void updateQuestion(){
+        if(currentQ == 9){
+            Intent intent = new Intent(this, DisplayMessageActivity.class);
+            TextView editText = (TextView) findViewById(R.id.score);
+            String message = editText.getText().toString();
+            intent.putExtra(EXTRA_MESSAGE, message);
+            startActivity(intent);
+            return;
+        }
         myQuestion.setText(myQuestionLib.getQuestion(currentQ));
         myButton1.setText(myQuestionLib.getChoice1(currentQ));
         myButton2.setText(myQuestionLib.getChoice2(currentQ));
@@ -99,11 +107,12 @@ public class MainActivity extends AppCompatActivity {
         myAnswer = myQuestionLib.getCorrectanswer(currentQ);
         currentQ++;
     }
+
     public void updateScore(int point){
         myTotal.setText(""+myScore);
     }
 
-    /** Called when the user taps the Send button */
+    /** Called when the user taps the Quit button */
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         TextView editText = (TextView) findViewById(R.id.score);

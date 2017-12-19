@@ -12,3 +12,11 @@ This project is about combining various ideas and skills I’ve been practicing 
 - Commenting and documenting your code.
 - Linking layouts together.
 - Practicing OOP style to create amore complex app.
+
+
+<p align="center">
+  <img src="https://c1.staticflickr.com/5/4599/39161199771_6f55aa8b56_b.jpg" width="350"/>
+  <img src="https://c1.staticflickr.com/5/4725/24300004787_828bc567cb_b.jpg" width="350"/>
+</p>
+
+Vector Illustration by <a href="https://www.vecteezy.com">Vecteezy.com</a>

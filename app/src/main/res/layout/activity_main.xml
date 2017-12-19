@@ -4,42 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="#FFEBD7"
+    android:background="@drawable/quizbackground"
     tools:context="com.example.android.quiz.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#FFEBD7">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="20dp">
-
-            <TextView
-                style="@style/HeaderTextStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:text="Score"
-                android:textAllCaps="true"
-                android:textColor="#9B748E"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0"
-                android:textAlignment="textEnd"
-                android:layout_gravity="end"
-                android:textSize="18sp" />
-
-        </LinearLayout>
+        android:gravity="center"
+        android:paddingTop="120dp">
 
         <TextView
             android:id="@+id/question"
@@ -47,43 +20,78 @@
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:text="TextView"
-            android:textAlignment="textStart"
-            android:textColor="#FC7354"
-            android:textSize="14sp" />
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:layout_width="285dp"
+            android:radius="50dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="#FFC362"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape"
             android:text="Button" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="285dp"
             android:layout_marginTop="16dp"
-            android:background="#FFC362"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape"
             android:text="Button" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="285dp"
             android:layout_marginTop="16dp"
-            android:background="#FFC362"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape"
             android:text="Button" />
 
-        <Button
-            android:id="@+id/finalScore"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginTop="56dp"
-            android:background="#6A2F57"
-            android:text="Quit"
-            android:textColor="@android:color/white"
-            android:onClick="sendMessage"/>
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/HeaderTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Score"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="54sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/finalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/shape"
+                android:text="Quit"
+                android:textColor="@android:color/white"
+                android:onClick="sendMessage"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

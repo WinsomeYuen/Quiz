@@ -11,30 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/birthday" />
-
-    <TextView
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Final Score for Quiz: "
-        android:textAlignment="center"
-        android:textColor="#FC7354"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/quizscore" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="49dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:text="TextView"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textSize="54sp"
         android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintLeft_toLeftOf="parent"
